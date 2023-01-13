@@ -1,0 +1,656 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap");
+
+:root {
+  /* Primary */
+  --Marine-blue: hsl(213, 96%, 18%);
+  --Purplish-blue: hsl(243, 100%, 62%);
+  --Pastel-blue: hsl(228, 100%, 84%);
+  --Light-blue: hsl(206, 94%, 87%);
+  --Strawberry-red: hsl(354, 84%, 57%);
+
+  /* Neutral */
+  --Cool-gray: hsl(231, 11%, 63%);
+  --Light-gray: hsl(229, 24%, 87%);
+  --Magnolia: hsl(217, 100%, 97%);
+  --Alabaster: hsl(231, 100%, 99%);
+  --White: hsl(0, 0%, 100%);
+  /* Fonte */
+  --font-ubuntu: "Ubuntu", sans-serif;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  padding: 0;
+  font-family: var(--font-ubuntu);
+  background-color: var(--Light-gray);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+
+/* MOBILE  */
+.img_bg_mobile {
+   font-size: 1.2em;
+}
+
+.img_bg_mobile img {
+  width: 100%;
+  margin: 0 auto;
+  position: absolute;
+  z-index: -1;
+}
+ 
+.img_bg_mobile .new-style {
+    width: 80%;
+    margin: 0 auto; 
+    align-items: flex-start;
+    display: flex;
+    padding: 3em 0em 0em 0em;
+} 
+
+ .sidebar_container .response-mobile_sidebar {
+  flex-flow: row;
+  /* background-color: rgb(250, 235, 215); */
+  font-size: .8em;
+  position: relative;
+  padding: 0;
+}
+
+main .main_mobile {
+  width: 100%;
+}
+
+
+/*   */
+
+main {
+  width: 50%;
+  margin: 0 auto;
+  background-color: var(--White);
+  display: flex;
+  padding: 0.9em;
+  border-radius: 0.9em;
+}
+
+.sidebar_container {
+  margin-right: 5rem;
+  width: 40%;
+}
+
+.sidebar_content {
+  display: flex;
+  flex-flow: column nowrap;
+  position: absolute;
+  margin: 0 auto;
+  padding: 3em 2em;
+}
+
+.sidebar_content span {
+  border: 1px solid hsl(0, 0%, 100%);
+  padding: 0.7em 1em;
+  border-radius: 50%;
+  font-size: 0.8em;
+  color: var(--White);
+  margin-right: 1rem;
+  font-weight: 600;
+}
+
+/* STEP ONE START */
+.form_step_one {
+  display: flex;
+  /* display: none; */
+  flex-flow: column nowrap;
+}
+
+.section_form .display_none_step {
+  display: none;
+}
+
+.step_one,
+.step_item + .step_item {
+  margin-bottom: 2rem;
+}
+
+.step_item {
+  display: flex;
+}
+
+.step_text {
+  color: var(--White);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  font-weight: 600;
+}
+
+.step_text :first-child {
+  font-size: 0.7em;
+  opacity: 70%;
+  font-weight: 400;
+  margin-bottom: 0.15rem;
+}
+
+.section_form {
+  width: 55%;
+  min-width: 15em;
+  padding: 3em 5em 0em 0em;
+}
+
+.section_form h2 {
+  color: var(--Marine-blue);
+  font-weight: 700;
+  margin-bottom: 0.7rem;
+  font-size: 1.8em;
+}
+
+.section_form p {
+  font-size: 0.9em;
+  font-weight: 400;
+  color: hsl(231, 11%, 63%);
+}
+
+.form_step_one form {
+  display: flex;
+  flex-flow: column;
+}
+
+.form_step_one label {
+  margin-top: 1.7rem;
+  margin-bottom: 0.5rem;
+  color: var(--Marine-blue);
+  font-weight: 600;
+  font-size: 0.9em;
+}
+
+/* MARCADOR STEP */
+.sidebar_content .sidebar_mark {
+  background-color: hsl(228, 100%, 84%);
+  color: hsl(213, 96%, 18%);
+}
+
+/* STEP ONE START  */
+
+.form_step_one input {
+  padding: 0.9em;
+  border-radius: 0.6em;
+  border: 1px solid hsl(231, 11%, 63%);
+}
+
+#step_one > .border-required {
+  border: 1px solid hsl(354, 84%, 57%);
+}
+
+#step_one > p {
+  color: hsl(354, 84%, 57%);
+  margin-top: 0.3rem;
+  font-weight: 400;
+  font-size: 0.7em;
+}
+
+.form_step_one input::placeholder {
+  font-weight: 600;
+  opacity: 75%;
+}
+
+.form_step_one input:focus {
+  border: 1px solid hsl(231, 11%, 63%);
+  outline: 0;
+}
+
+.btn {
+  align-self: flex-end;
+  padding: 0.8em 1.4em;
+  margin-top: 4em;
+  border-radius: 0.6em;
+  border: none;
+  background-color: var(--Marine-blue);
+  color: var(--White);
+  font-weight: 400;
+  cursor: pointer;
+}
+
+/* STEP ONE END */
+
+/* STEP TWO START  */
+
+.input_range .btn_range_display_none {
+  background-color: transparent;
+  transition: 9ms;
+}
+
+.options_container {
+  display: flex;
+  margin-bottom: 0.7rem;
+  margin-top: 2rem;
+}
+
+.form_step_two .required_plan {
+  color: hsl(354, 84%, 57%);
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+
+.form_step_two .box_required {
+  border: 1px solid hsl(354, 84%, 57%);
+}
+
+.box_stepTwo {
+  border: 1px solid hsl(229, 24%, 87%);
+  width: 60%;
+  padding: 1.2em 1em;
+  border-radius: 0.7em;
+  cursor: pointer;
+}
+
+.box_stepTwo:hover {
+  border: 1px solid hsl(243, 100%, 62%);
+  transition: 7ms;
+}
+
+.options_container .bgselected {
+  background-color: var(--Magnolia);
+  border: 1px solid hsl(243, 100%, 62%);
+}
+
+.box_stepTwo > img + p {
+  margin-top: 3rem;
+  color: var(--Marine-blue);
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  font-size: 1em;
+}
+
+.box_stepTwo > p + p {
+  font-size: 0.9em;
+  font-weight: 500;
+}
+
+.box_stepTwo + .box_stepTwo {
+  margin-left: 1.5rem;
+}
+
+.monthly_yearly {
+  background-color: var(--Magnolia);
+  border-radius: 0.5em;
+  padding: 1em 0;
+  min-width: 15em;
+}
+
+.monthly_yearly .m_y_options {
+  width: 50%;
+  min-width: 10em;
+  margin: 0 auto;
+  display: flex;
+  font-size: 1.1em;
+  font-weight: 700;
+}
+
+.input_range {
+  width: 17%;
+  background-color: var(--Marine-blue);
+  display: flex;
+  justify-content: space-between;
+  border-radius: 0.6em;
+  padding: 0.2em 0.2em;
+  margin: 0rem 1rem 0 1rem;
+}
+
+.input_range button {
+  padding: 0.5em;
+  border-radius: 50%;
+  border: none;
+  background-color: var(--White);
+  cursor: pointer;
+}
+
+.btns_step_two {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 6rem;
+}
+
+.options_container .opacity-box {
+  opacity: 50%;
+}
+
+.options_container .opacity-box:hover {
+  border: 1px solid hsl(0, 0%, 85%);
+}
+
+.btn_step_two {
+  padding: 0.8em 1.4em;
+  border-radius: 0.6em;
+  border: none;
+  background-color: var(--Marine-blue);
+  color: var(--White);
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.m_y_options .color {
+  color: hsl(213, 96%, 18%);
+  font-weight: 700;
+}
+
+.btns_step_two .back {
+  background-color: transparent;
+  border: none;
+  color: hsl(213, 96%, 18%);
+  font-weight: 700;
+  font-size: 0.9em;
+  cursor: pointer;
+}
+
+/* STEP TWO END */
+
+/* STEP THREE START */
+
+.options_step_three {
+  margin-top: 2.5rem;
+}
+
+.options_step_three > .bgselectedAddons {
+  background-color: var(--Magnolia);
+}
+
+.box_step_three {
+  border: 1px solid hsl(243, 100%, 62%);
+  display: flex;
+  padding: 1em;
+  border-radius: 0.6em;
+  align-items: center;
+  cursor: pointer;
+}
+
+input[type="checkbox"] {
+  position: relative;
+  cursor: pointer;
+  height: 1.4em;
+}
+
+input[type="checkbox"]:before {
+  content: "";
+  background-color: var(--White);
+  display: block;
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border: 1px solid hsl(231, 11%, 63%);
+  border-radius: 0.2em;
+}
+
+input[type="checkbox"]:checked::before {
+  background-color: hsl(243, 100%, 62%);
+  border: 1px solid hsl(0, 0%, 85%);
+}
+
+input[type="checkbox"]:checked:after {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 7px;
+  border: solid hsl(231, 100%, 99%);
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  position: absolute;
+  top: 3px;
+  left: 5.1px;
+}
+
+.service {
+  margin-left: 2rem;
+  margin-right: 5rem;
+  width: 50%;
+  font-size: .9em;
+}
+
+.service .first_child {
+  color: hsl(213, 96%, 18%);
+  font-size: 1em;
+  font-weight: 500;
+  margin-bottom: 0.2rem;
+}
+
+.box_step_three > p {
+  color: hsl(243, 100%, 62%);
+  font-weight: 500;
+}
+
+.btns_step_two > .back {
+  color: hsl(231, 11%, 63%);
+}
+
+.btns_step_two > .back:hover {
+  opacity: 70%;
+  transition: 3ms;
+}
+
+.box_step_three + .box_step_three {
+  margin-top: 1rem;
+}
+
+.btns_step_three {
+  margin-top: 2rem;
+}
+
+/* STEP THREE END */
+
+/* STEP FOUR START */
+
+.form_step_four form > p {
+  margin-bottom: 2rem;
+}
+
+.subscribe_content {
+  margin: 0;
+  background-color: hsl(217, 100%, 97%);
+  border-radius: 0.4em;
+}
+
+.plan_selected {
+  display: flex;
+  flex-flow: column;
+  gap: 0.3em;
+}
+
+.plan_selected > p {
+  font-weight: 700;
+}
+
+.hr {
+  width: 100%;
+  height: 1px;
+  background-color: hsl(229, 24%, 87%);
+  margin: 2rem 0 2rem 0;
+}
+
+.subscribe_info {
+  margin: 0 auto;
+  width: 90%;
+  padding: 1.5em 0;
+}
+
+.service_plan {
+  display: flex;
+  justify-content: space-between;
+}
+
+.service_plan > p {
+  font-weight: 500;
+}
+
+.plan_type > p {
+  font-weight: 700;
+}
+
+.subscribe_info .color {
+  color: hsl(213, 96%, 18%);
+}
+
+.service_plan + .service_plan {
+  margin-top: 2rem;
+}
+
+.total_content {
+  margin-top: 2rem;
+}
+
+.form_step_four a {
+  font-size: 0.8em;
+  color: hsl(231, 11%, 63%);
+  font-weight: 500;
+}
+
+.form_step_four a:hover {
+  transition: 3ms;
+  color: hsl(243, 100%, 62%);
+}
+
+.total_content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.four {
+  background-color: hsl(243, 100%, 62%);
+  width: 25%;
+}
+
+.four:hover {
+  opacity: 90%;
+  transition: 2ms;
+}
+
+#total_plan {
+  color: hsl(243, 100%, 62%);
+  font-size: 1.2em;
+  font-weight: 700;
+}
+
+/* STEP FOUR END */
+
+/* TKY  START */
+.section_form_tky {
+  width: 55%;
+  min-width: 15em;
+  padding: 10em 1em;
+}
+
+.tky {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  padding: 8em 0em;
+}
+
+.tky img {
+  width: 15%;
+  align-self: center;
+}
+
+.tky h2 {
+  text-align: center;
+  margin: 0.8em 0;
+}
+
+.tky p {
+  width: 90%;
+  text-align: center;
+}
+
+/* TKY END */
+
+/* RESPONSIVE */
+
+@media (max-width: 375px) {
+  html {
+     font-size: 13.5px;
+  }
+
+  .form_step_one input {
+   padding: 0.7em;
+   /* font-size: .9em; */
+ }
+
+ .form_step_one input::placeholder {
+   font-size: .9em;
+ }
+
+ .btn_step_two,.btn {
+   font-size: .9em;
+ }
+
+}
+
+@media (max-width: 700px) {
+  body {
+    flex-flow: column;    
+    align-items:initial ;
+    justify-content: initial;
+  }
+}
+
+@media (max-width: 857px) {
+  main {
+    width: 85%;
+  }
+
+  .btns_step_three {
+    margin-top: 3rem;
+  }
+
+  #btn_confirm {
+    padding: .5em .2em;
+  }
+}
+
+@media (max-width: 899px) {
+  .options_step_three {
+   margin-top: 1rem;
+   font-size: .9em;
+  }
+
+  #btn_confirm {
+   padding: .4em .2em;
+  }
+}
+
+@media (max-width: 1068px) {
+  .section_form {
+    padding: 2em 0;
+  }
+
+  .btns_step_three {
+    margin-top: 2rem;
+  }
+
+  #btn_confirm {
+    padding: .7em .2em;
+   }
+   
+   .box_stepTwo {
+    padding: .8em .3em;
+   }
+}
+
+@media (max-width: 1440px) {
+  main {
+    width: 70%;
+  }
+
+  .btns_step_three {
+    margin-top: 5rem;
+  }
+}
+
+
+
+
+
+
