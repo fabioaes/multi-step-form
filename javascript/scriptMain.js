@@ -428,7 +428,7 @@ btnConfirm.addEventListener("click", (ev) => {
 
 
 
-// RESPONSE
+
 function mobileResponse (x) {
   if (x.matches) {
       // CREATE NEW SIDEBAR
@@ -466,24 +466,25 @@ function mobileResponse (x) {
             // optionsstepTwo[2].classList.add('box_stepTwo_response')
       
       } else {
-          
-          const sedibarNew = document.querySelector('#new')
-          
-          body.removeChild(sedibarNew)
+           const sidebarNew = document.querySelector('body>#new')  
+
+          if (body.children.length !== 2)  {
+
+          body.removeChild(sidebarNew)
           sidebarConteiner.append(imgBgDesktop)
-          // main.append(sidebarConteiner)
+          main?.append(sidebarConteiner)
           sidebarContent.classList.remove('response-mobile_sidebar')
           sidebarConteiner.classList.remove('new-style')
           sectionForm.classList.remove('main_mobile')
 
-          // INSERT TEXT INFO TO SIDEBAR AFTER
+          // REMOVE TEXT INFO TO SIDEBAR AFTER
          infoSidebar[0].append(textSidebarRemove[0])
          infoSidebar[1].append(textSidebarRemove[1])
          infoSidebar[2].append(textSidebarRemove[2])
          infoSidebar[3].append(textSidebarRemove[3])
 
          main.insertAdjacentElement('afterbegin', sidebarConteiner)
-      } 
+      } }
   }
 
 var x = window.matchMedia("(max-width: 700px)")
