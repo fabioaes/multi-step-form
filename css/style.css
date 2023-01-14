@@ -310,7 +310,7 @@ main {
 .btns_step_two {
   display: flex;
   justify-content: space-between;
-  margin-top: 6rem;
+  margin-top: 3.5rem;
 }
 
 .options_container .opacity-box {
