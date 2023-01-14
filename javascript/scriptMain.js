@@ -458,12 +458,7 @@ function mobileResponse (x) {
          infoSidebar[1].removeChild(textSidebarRemove[1])
          infoSidebar[2].removeChild(textSidebarRemove[2])
          infoSidebar[3].removeChild(textSidebarRemove[3])
-         
-            // STYLE STEP TWO RESPONSE MOBILE 
-            // optionsContainer_stepTwo.setAttribute('id', 'stepTwo_response')
-            // optionsstepTwo[0].classList.add('box_stepTwo_response')
-            // optionsstepTwo[1].classList.add('box_stepTwo_response')
-            // optionsstepTwo[2].classList.add('box_stepTwo_response')
+        
       
       } else {
            const sidebarNew = document.querySelector('body>#new')  
