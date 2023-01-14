@@ -468,7 +468,7 @@ function mobileResponse (x) {
       } else {
            const sidebarNew = document.querySelector('body>#new')  
 
-          if (body.children.length !== 2)  {
+          if (body.children.length !== 1)  {
 
           body.removeChild(sidebarNew)
           sidebarConteiner.append(imgBgDesktop)
