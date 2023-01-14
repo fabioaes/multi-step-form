@@ -17,7 +17,7 @@ import {
   main,
   imgBgDesktop,
   sidebarContent,
-} from "/javascript/selectorsElement.js";
+} from "https://fabioaes.github.io/multi-step-form/javascript/selectorsElement.js";
 
 import {
   stepTwo,
@@ -27,7 +27,7 @@ import {
   btnstepTwo,
   requiredPlan,
   pOptionsStepTwo,
-} from "/javascript/selectorsElement.js";
+} from "https://fabioaes.github.io/multi-step-form/javascript/selectorsElement.js";
 
 import {
   stepThree,
@@ -36,7 +36,7 @@ import {
   stepsubmitThree,
   btnRange,
   pBoxOptions,
-} from "/javascript/selectorsElement.js";
+} from "https://fabioaes.github.io/multi-step-form/javascript/selectorsElement.js";
 
 import {
   stepFour,
@@ -49,7 +49,7 @@ import {
   tky,
   sectionForm,
   pM_y_options,
-} from "/javascript/selectorsElement.js";
+} from "https://fabioaes.github.io/multi-step-form/javascript/selectorsElement.js";
 
 // VARIABLES
 let txt = "";
@@ -436,7 +436,7 @@ function mobileResponse (x) {
       newSidebar.setAttribute('id','new')
       newSidebar.classList.add('img_bg_mobile')
       const bgImgMobile = document.createElement('img')
-      bgImgMobile.setAttribute('src', '/assets/bg-sidebar-mobile.svg')
+      bgImgMobile.setAttribute('src', './assets/bg-sidebar-mobile.svg')
       newSidebar.append(bgImgMobile)
       // body.append(newSidebar)
       body.insertAdjacentElement('afterbegin', newSidebar)
